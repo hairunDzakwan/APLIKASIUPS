@@ -48,13 +48,12 @@ function page() {
     <div className='mt-8 '>
     <Image src={User} alt='logo' width={38} quality={100} />
     </div>
-    
-   
-    
-
-    
-
     </div>
+    
+        <div>
+          <input type="halohalo" />
+        </div>
+
     </div>
   
     </>
