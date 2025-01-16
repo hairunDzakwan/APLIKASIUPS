@@ -51,7 +51,7 @@ function page() {
     </div>
     
         <div>
-          <input type="halohalo" />
+          skkks
         </div>
 
     </div>

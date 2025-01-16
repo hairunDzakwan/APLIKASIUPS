@@ -21,36 +21,23 @@ function page() {
   return (
     <>
     <div className='h-screen'>
-     <div className=' border-b-2 border-black bg-red-900 relative flex '>
-    <div className='py-6 ml-8 '> {/* Menambahkan border-bottom hitam */}
-        <Image src={Navbar} alt='logo' width={180} quality={100} />
-    </div>
-    <div className='mt-7 ml-96 '>
-      <input
-
-        type="text"
-        placeholder="Search..."
-       className='rounded-full py-3 px-4 w-96'
-        style={{width:630, marginLeft:300, marginRight:220 }}
-        
-      />
-      <FaSearch className={styles.icon} />
-      {/* <ul>
-        {results.map((item) => (
-          <li key={item.id}>{item.name}</li>
-        ))}
-      </ul> */}
-    </div>
-    
-    <div className='mt-8 mr-5 '>
-    <Image src={Cart} alt='logo' width={40} quality={100} />
-    </div>
-    <div className='mt-8 '>
-    <Image src={User} alt='logo' width={38} quality={100} />
-    </div>
-    
-    </div>
-
+      
+  {/* Header */}
+  <div className="border-b-2 border-black bg-red-900 flex justify-between items-center px-8 py-4">
+        <Image src={Navbar} alt="logo" width={180} quality={100} />
+        <div className="flex items-center space-x-4">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="rounded-full py-2 px-4 w-96"
+            />
+            <FaSearch className="absolute top-2 right-4 text-gray-500" />
+          </div>
+          <Image src={Cart} alt="Cart" width={40} quality={100} />
+          <Image src={User} alt="User" width={38} quality={100} />
+        </div>
+      </div>
     <div className='flex  ml-1' >
       <div className='ml-14 mt-10 '>
           <Image src={foto1} alt='poster1' width={1000} quality={100} />
